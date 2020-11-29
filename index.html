@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Monster Website Landing Responsive Design</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <section class="container">
@@ -24,10 +25,49 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio autem
                      exercitationem voluptate dolorem numquam tempora molestias itaque, 
                      non quia eum, hic facilis ratione, mollitia a assumenda obcaecati
-                     totam quibusdam beatae.</p>
+                     totam quibusdam beatae numquam tempora molestias itaque, 
+                     non quia eum, hic facilis ratione, mollitia a assumenda obcaecati</p>
                      <a href="#">Learn More</a>
             </div>
+
+            <div class="imgbx">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/mons1.png" alt="Monster Energy"></div>
+                      <div class="swiper-slide"><img src="./img/mons2.png" alt="Monster Energy"></div>
+                      <div class="swiper-slide"><img src="./img/mons3.png" alt="Monster Energy"></div>
+                      <div class="swiper-slide"><img src="./img/mons4.png" alt="Monster Energy"></div>
+                      <div class="swiper-slide"><img src="./img/mons5.png" alt="Monster Energy"></div>
+                      <div class="swiper-slide"><img src="./img/mons6.png" alt="Monster Energy"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <ul class="sn">
+            <li><a href="#"><img src="./img/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="./img/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="./img/twitter.png" alt="Twitter"></a></li>
+        </ul>
     </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
 </body>
 </html>
