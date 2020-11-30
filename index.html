@@ -12,6 +12,7 @@
         <div class="circle"></div>
         <header class="header">
             <a href="#"><img src="./img/logo2.png" class="logo" alt="logo"></a>
+            <div class="toggle" onclick="toggleMenu()" ></div>
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
@@ -58,16 +59,24 @@
           centeredSlides: true,
           slidesPerView: 'auto',
           coverflowEffect: {
-            rotate: 50,
+            rotate: 90,
             stretch: 0,
-            depth: 100,
+            depth: 200,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: false,
           },
           pagination: {
             el: '.swiper-pagination',
           },
+          loop: true,
         });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
       </script>
 </body>
 </html>

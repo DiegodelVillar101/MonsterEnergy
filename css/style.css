@@ -84,16 +84,18 @@
 
 .content .textbx p{
     color: #fff;
+    font-size: 1.25em;
 }
 
 .content .textbx a{
     display: inline-block;
     margin-top: 20px;
-    padding: 8px 20px;
+    padding: 10px 22px;
     background: #00ce00;
     color: #fff;
     border-radius: 40px;
-    font-weight: 500;
+    font-size: 1.35em;
+    font-weight: 700;
     letter-spacing: 1px;
     text-decoration: none;
 }
@@ -136,7 +138,7 @@
 
 /********SLIDER*******/
 .swiper-container {
-    width: 100%;
+    width: 70%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -144,14 +146,14 @@
   .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 180px;
-    height: 500px;
+    width: 190px;
+    height: 460px;
     display: flex;
     justify-content: center;
 }
 
 .content .imgbx{
-    width: 500px;
+    width: 550px;
     display: flex;
     justify-content: flex-end;
 }
@@ -164,9 +166,88 @@
     position: relative;
     bottom: 0;
     max-height: 100%;
+    width: 280px;
 }
 
-.swiper-container-3d .swiper-container-shadow-left,
+/* .swiper-container-3d .swiper-container-shadow-left,
 .swiper-container-3d .swiper-container-shadow-right{
     background-image: none;
+} */
+
+@media (max-width: 991px){
+    .header{
+        padding: 40px;
+    }
+
+    .header .logo{
+        width: 313px;
+    }
+    
+    .header .navigation{
+        display: none;
+    }
+
+    .header .navigation.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        bottom: 100%;
+        background: #00ce00;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+    }
+
+    .header .navigation li a{
+        margin: 10px 0;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+
+    .container{
+        padding: 150px 40px;
+    }
+
+    .sn{
+     left: 40px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .content .imxb{
+        margin-top: 100px;
+    }
+
+    .content.textbx, .content .imgbx{
+        max-width: 100%;
+    }
+
+    .swiper-slide{
+        height: 300px;
+    }
+
+    .toggle{
+        position: fixed;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .toggle.active{
+        background: url(../img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
