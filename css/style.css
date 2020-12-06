@@ -218,7 +218,8 @@
     }
 
     .sn{
-     left: 40px;
+     justify-content: space-evenly;
+     align-items: center;
     }
 
     .content{
