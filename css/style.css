@@ -153,13 +153,19 @@
 }
 
 .content .imgbx{
-    width: 550px;
+    width: 600px;
     display: flex;
     justify-content: flex-end;
+    margin-top: 50px;
 }
 
 .content .imgbx img{
     max-width: 150px;
+    
+}
+
+.flechas img{
+    width: 100px;
 }
 
 .swiper-slide img{
@@ -217,6 +223,10 @@
 
     .content{
         flex-direction: column;
+    }
+
+    .flechas img{
+        margin-top: 40px;
     }
 
     .content .imxb{
