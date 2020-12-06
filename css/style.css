@@ -210,7 +210,7 @@
         width: 100%;
         height: 100vh;
         bottom: 10%;
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,154,31,1) 49%, rgba(173,255,143,1) 100%);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,154,31,1) 56%, rgba(112,250,61,1) 100%);
         display: flex;
         flex-direction: column;
         align-items: center;
