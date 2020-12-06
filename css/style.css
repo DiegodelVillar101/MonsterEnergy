@@ -100,6 +100,11 @@
     text-decoration: none;
 }
 
+.content .textbx a:hover{
+    background: #fff;
+    color: #00ce00;
+}
+
 .sn{
     position: absolute;
     bottom: 40px;
@@ -215,6 +220,10 @@
 
     .container{
         padding: 150px 40px;
+    }
+
+    .container .circle{
+        clip-path: circle(48% at right -20%);
     }
 
     .sn{
