@@ -59,6 +59,11 @@
     text-decoration: none;
     margin-left: 40px;
 }
+.header .navigation li a:hover{
+    color: #222;
+    font-weight: 500;
+    transition: .5s;
+}
 
 .content{
     position: relative;
@@ -203,8 +208,9 @@
         top: 0;
         left: 0;
         width: 100%;
-        bottom: 100%;
-        background: #00ce00;
+        height: 100vh;
+        bottom: 10%;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,154,31,1) 49%, rgba(173,255,143,1) 100%);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -214,8 +220,13 @@
 
     .header .navigation li a{
         margin: 10px 0;
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 300;
+    }
+    .header .navigation li a:hover{
+        color: #222;
+        font-weight: 500;
+        transition: .5s;
     }
 
     .flechas img{
@@ -259,7 +270,7 @@
 
     .toggle{
         position: fixed;
-        right: 40px;
+        right: 30px;
         width: 30px;
         height: 30px;
         background: url(../img/menu.png);
