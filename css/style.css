@@ -271,3 +271,9 @@
         background-position: center;
     }
 }
+
+@media (max-width: 691px){
+    .container .circle{
+        clip-path: circle(48% at right -20%);
+    }
+}
